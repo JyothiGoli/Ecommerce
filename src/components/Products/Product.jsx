@@ -10,7 +10,7 @@ const Product = ({ handleCart }) => {
             <img src={list.images} alt={list.title} />
             <div>
               {/* <h1 className="text">{list.title}</h1> */}
-              <Link to={list.title} className="product">
+              <Link to={list.title} className="product" data-test={list.title}>
                 {list.title}
               </Link>
             </div>
