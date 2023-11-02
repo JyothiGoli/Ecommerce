@@ -1,16 +1,16 @@
-describe("Electronics User Journey", () => {
+describe("Men User Journey", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
   });
   it(" a user can find link on home page which redirects to the few products and can add them to the cart", () => {
-    cy.getByData("Electronics").click();
-    cy.location("pathname").should("equal", "/Electronics");
+    cy.getByData("Men").click();
+    cy.location("pathname").should("equal", "/Men");
     cy.getByData("image")
       .find("img")
-      .eq(5)
-      .should("have.attr", "alt", "MacBook Pro");
-    cy.getByData("text").contains("MacBook Pro");
-    cy.getByData("price").eq(5).contains("1749/-");
+      .eq(3)
+      .should("have.attr", "alt", "Wrist Watch");
+    cy.getByData("text").contains("Wrist Watch");
+    cy.getByData("price").eq(3).contains("1060/-");
     cy.getByData("clickButton").find("button").contains("Add to Cart").click();
     cy.getByData("home").contains("Home").click();
     cy.location("pathname").should("equal", "/");
