@@ -20,7 +20,7 @@ export const Women = [
   },
   {
     id: 4,
-    title: "Fashion Magnetic Wrist Watch",
+    title: "Fashion Wrist Watch",
     price: 1060,
     images:
       "https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F007%2F955%2Fmodern-design-glossy-finish-round-shape-ladies-fancy-watch-for-daily-wear-967.jpg&w=750&q=75",
